@@ -1,0 +1,24 @@
+main {
+    padding-bottom: 150px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+main p {
+    margin-bottom: 30px;
+    color: #FF6060;
+    font-size: 36px;
+    margin-bottom: 180px;
+}
+#codeError{
+    margin-bottom: 30px;
+    font-size: 288px;
+    font-weight: 700;
+}
+main p:last-child{
+    text-decoration: underline;
+    font-size: 18px;
+    color: #FF6060;
+}
+
