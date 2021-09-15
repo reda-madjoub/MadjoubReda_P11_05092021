@@ -27,8 +27,10 @@ export default class About extends Component {
         allValues,
     }
     render() {
-        const liste = Object.keys(allValues).map(el => 
-            <Accordion 
+        const liste = Object.keys(allValues).map((el, index) => 
+            <Accordion  
+                key={index}
+                isOpen={false}
                 name={allValues[el].nameValue} 
                 description={allValues[el].descriptionValue}    
             />)
