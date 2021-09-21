@@ -13,15 +13,15 @@ export default class Slider extends Component {
         this.prevSlide = this.prevSlide.bind(this)
     }
 
-    nextSlide(){
-        const newIndex = this.state.index < 4 ? this.state.index + 1 : 0
+    nextSlide(nbrImages){
+        const newIndex = this.state.index < nbrImages - 1 ? this.state.index + 1 : 0
         this.setState({
             index: newIndex
         })
     }
 
-    prevSlide(){
-        const newIndex = this.state.index > 0 ? this.state.index - 1 : 4
+    prevSlide(nbrImages){
+        const newIndex = this.state.index > 0 ? this.state.index - 1 : nbrImages - 1
         this.setState({
             index: newIndex
         })
@@ -30,15 +30,14 @@ export default class Slider extends Component {
 
     render() {
         const { pictures } = this.props
-        console.log(this.state.index);
         return (
             <div className="slider">
                 <img 
                     src={pictures[this.state.index]}
                     alt="accomodation"
                 />
-                <img onClick={this.prevSlide} id="left" src={arrowLeft}alt="left Arrow"/>
-                <img onClick={this.nextSlide} id="right" src={arrowRigth}alt="right Arrow"/>
+                <img onClick={() => this.prevSlide(pictures.length)} id="left" src={`${process.env.PUBLIC_URL}${arrowLeft}`} alt="left Arrow"/>
+                <img onClick={() => this.nextSlide(pictures.length)} id="right" src={`${process.env.PUBLIC_URL}${arrowRigth}`} alt="right Arrow"/>
             </div>
         )
     }

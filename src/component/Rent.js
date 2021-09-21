@@ -13,20 +13,19 @@ import Slider from './Slider'
 export default class Rent extends Component {
     getRent = () => data.filter(obj => obj.id === this.props.match.params.id)
     render() {
-        const checkId = data.filter(elt => elt.id === this.props.match.params.id);
-        if(this.props.match.params.id !== checkId[0].id) return <Redirect to="/error" />
+        const checkId = data.filter(elt => elt.id === this.props.match.params.id)
+        if(!checkId[0]) return <Redirect to="/error" />
+        if(this.props.match.params.id !== checkId[0].id ) return <Redirect to="/error" />
         const {
             description,
             equipments,
             host,
-            id,
             location,
             pictures,
             rating,
             tags,
             title
          } = this.getRent()[0]
-        console.log(this.getRent()[0])
 
         return (
             <div className="rent">
