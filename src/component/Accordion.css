@@ -31,6 +31,8 @@
     cursor: pointer;
 }
 .principleHeader p {
+    font-size: 22px;
+    font-weight: 600;
     color: #fff;
     margin: 5px 0 7px 18px;
 }
@@ -42,6 +44,7 @@
     margin-right: 20px;
 }
 .principleContent {
+    font-size: 19px;
     width: 100%;
     position: relative;
     bottom: 5px;
@@ -74,6 +77,7 @@
 }
 .show {
     display: block;
+    padding: 10px;
 }
 
 .up {

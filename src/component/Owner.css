@@ -1,0 +1,17 @@
+.owner {
+
+}
+.owner img {
+    margin: 0;
+    padding: 0;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.owner p {
+    color: #FF6060;
+}

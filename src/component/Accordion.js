@@ -33,9 +33,14 @@ export default class Accordion extends Component {
                     />
                 </div>
                 <div className="principleContent">
-                    <p  
-                        className={`hide ${isOpen ? "show" : ""}`}
-                    >{description}</p>
+                    {
+                        Array.isArray(description) ? 
+                        description.map((el,index) => 
+                        <p style={{"paddingTop": "20px"}} className={`hide ${isOpen ? "show" : ""}`} key={index}>{el}</p>) 
+                        : 
+                        <p style={{"paddingTop": "20px" ,"lineHeight" :"30px"}} className={`hide ${isOpen ? "show" : ""}`}>{description}</p>
+                        
+                    }
                 </div>
             </article>
         )

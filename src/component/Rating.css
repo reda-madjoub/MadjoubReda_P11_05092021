@@ -1,0 +1,17 @@
+.rating {
+    width: 100px;
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+.rating span {
+    width: 30px;
+    height: 30px;
+}
+
+.rating span img {
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+}

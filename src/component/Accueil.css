@@ -1,0 +1,43 @@
+.container {
+    width: 90%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F6F6;
+}
+
+.container article {
+    width: 340px;
+    height: 340px;
+    position: relative;
+    margin: 50px;
+}
+
+.container article img {
+    height: 340px;
+    width: 340px;
+    object-fit: cover;
+    image-rendering: pixelated;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin: 0px;
+    padding: 0;
+}
+.container article h3 {
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    width: 200px;
+}
