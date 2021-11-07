@@ -7,11 +7,11 @@ export default class Header extends Component {
     render() {
 
         return (
-            <header>
+            <header className="header">
             <Link to="/">
                 <img src={logo} alt="logo Kasa"/>
             </Link>
-                <ul>
+                <ul className="headerLink">
                 <NavLink to='/'>
                     <li>Accueil</li>
                 </NavLink>

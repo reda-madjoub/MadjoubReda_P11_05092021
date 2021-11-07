@@ -4,18 +4,18 @@
     box-sizing: border-box;
 }
 
-header {
+.header {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     width: 100%;
 }
 
-img {
+.header img {
     margin: 60px 200px;
     cursor: pointer;
 }
-ul {
+.headerLink {
     width: 250px;
     margin: 60px 200px 60px 0;
     list-style: none;
@@ -25,7 +25,7 @@ ul {
     align-items: center;
 }
 
-li {
+.headerLink li {
     width: 120px;
     cursor: pointer;
     font-size: 24px;
@@ -36,38 +36,37 @@ li {
     -moz-text-decoration-line: underline;
 }
 
-@media screen and (max-width : 990px) {
-    header {
-      justify-content: space-around;  
+@media (max-width: 900px) {
+    .header img {
+        margin: 60px 0px 60px 20px;
     }
-
-    img {
+    .headerLink {
+        width: 250px;
+        margin: 60px 20px 60px 0;
     }
-    ul {
-        height: 100%;
-    }
-    header ul li {
-
+    
+    .headerLink li {
+        width: 120px;
+        font-size: 24px;
     }
 }
-@media screen and (max-width : 450px) {
-    header {
-        width: 100%;
-        justify-content: space-between;  
-    }
-
-    header img {
-        margin: 20px 0px 2px 20px ;
-        width: 90px;
-        height: auto;
-    }
-    ul {
-        margin: 20px 20px 20px 0px;
-    }
-    li {
-        width: 65px !important;
-        text-align: center;
-        font-size: 12px;
+@media (max-width: 550px) {
+    .header img {
         width: 80px;
+        height: auto;
+        margin: 30px 0px 30px 10px;
+    }
+    .headerLink {
+        justify-content: flex-end;
+        width: 50%;
+        margin: 30px 5px 30px 10px;
+    }
+    
+    .headerLink li {
+        margin-right: 20px;
+        width: 100%;
+        font-size: 18px;
     }
 }
+
+
