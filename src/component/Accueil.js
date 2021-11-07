@@ -12,6 +12,7 @@ export default class Accueil extends Component {
                     data.map((card, key) => 
                         <NavLink key={key} to={`/rent/${card.id}`}>
                             <article>
+                                <div className="cover"></div>
                                 <img src={card.cover} alt={card.title} />
                                 <h3>{card.title}</h3>
                             </article>
