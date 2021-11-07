@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header {
     display: flex;
     flex-flow: row nowrap;
@@ -28,4 +34,40 @@ li {
     color: #FF6060;
     text-decoration-line: underline;
     -moz-text-decoration-line: underline;
+}
+
+@media screen and (max-width : 990px) {
+    header {
+      justify-content: space-around;  
+    }
+
+    img {
+    }
+    ul {
+        height: 100%;
+    }
+    header ul li {
+
+    }
+}
+@media screen and (max-width : 450px) {
+    header {
+        width: 100%;
+        justify-content: space-between;  
+    }
+
+    header img {
+        margin: 20px 0px 2px 20px ;
+        width: 90px;
+        height: auto;
+    }
+    ul {
+        margin: 20px 20px 20px 0px;
+    }
+    li {
+        width: 65px !important;
+        text-align: center;
+        font-size: 12px;
+        width: 80px;
+    }
 }

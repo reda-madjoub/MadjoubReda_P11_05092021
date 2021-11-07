@@ -1,4 +1,4 @@
-import React, { Component, useParams } from 'react'
+import React, { Component } from 'react'
 import { NavLink  } from 'react-router-dom'
 import './Rent.css'
 import {data} from '../data/data.js'
