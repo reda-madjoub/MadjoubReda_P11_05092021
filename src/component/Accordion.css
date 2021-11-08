@@ -1,5 +1,9 @@
 .ourValues {
     padding-bottom: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
 .ourValues img {
     width: 80%;

@@ -1,5 +1,6 @@
 .container {
     width: 90%;
+    margin: 20px auto;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -17,12 +18,21 @@
     height: 340px;
     position: relative;
     margin: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }
 .container article .cover {
     width: 340px;
     height: 340px;
     position: absolute;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%) !important;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .container article img {
@@ -45,4 +55,45 @@
     bottom: 30px;
     left: 10px;
     width: 200px;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        background-color: #FFF;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+        margin: 20px auto;
+        background-color: #FFF;
+    }
+    
+    .container article {
+        width: 260px;
+        height: 260px;
+        margin: 20px;
+    }
+    .container article .cover {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .container article img {
+        height: 250px;
+        width: 250px;
+    }
+}
+@media (max-width: 300px) {
+    .container article .cover {
+        width: 240px;
+        height: 240px;
+    }
+    
+    .container article img {
+        height: 240px;
+        width: 240px;
+    }
 }
