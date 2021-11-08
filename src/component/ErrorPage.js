@@ -6,7 +6,7 @@ export default class Header extends Component {
     render() {
 
         return (
-            <main>
+            <main className="error">
                 <p id="codeError">404</p>
                 <p>Oups! La page que vous demandez n'existe pas.</p>
                 <NavLink to="/">
