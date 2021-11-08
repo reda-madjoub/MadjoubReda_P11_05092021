@@ -5,5 +5,20 @@
 }
 .RentTitle h2 {
     color: #FF6060;
+    font-size: 36px;
+    font-weight: 600;
+}
+.RentTitle h4 {
+    color: #FF6060;
+    font-size: 18px;
+    font-weight: 500;
+}
 
+@media (max-width: 650px) {
+    .RentTitle h2 {
+        font-size: 18px;
+    }
+    .RentTitle h4 {
+        font-size: 14px;
+    } 
 }

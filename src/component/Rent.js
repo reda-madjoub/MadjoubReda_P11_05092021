@@ -39,8 +39,8 @@ export default class Rent extends Component {
                     <Tags tags={tags}/>
                 </div>
                 <div className="imgInfo">
-                    <Rating rating={rating}/>
                     <Owner host={host}/>
+                    <Rating rating={rating}/>
                 </div>
             </div>
                 <div className="dropdown">

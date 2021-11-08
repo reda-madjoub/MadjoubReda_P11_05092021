@@ -1,9 +1,11 @@
 .owner {
-
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
 .owner img {
-    margin: 0;
-    padding: 0;
+    margin: 10px;
     width: 64px;
     height: 64px;
     border-radius: 50%;
@@ -13,5 +15,29 @@
     -o-border-radius: 50%;
 }
 .owner p {
+    font-size: 18px;
+    text-align: right;
+    font-weight: 500;
+    padding-top: 5px;
     color: #FF6060;
+}
+
+@media (max-width: 650px) {
+    .owner {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        width: fit-content;
+
+    }
+    .owner img {
+        margin: 10px;
+        width: 64px;
+        height: 64px;
+    }
+    .owner p {
+        font-size: 18px;
+        text-align: right;
+    }
 }

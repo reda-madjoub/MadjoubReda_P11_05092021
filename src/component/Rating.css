@@ -2,11 +2,14 @@
     width: 100px;
     display: flex;
     flex-flow: row nowrap;
-
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px;
 }
 .rating span {
     width: 30px;
     height: 30px;
+    
 }
 
 .rating span img {
@@ -14,4 +17,34 @@
     padding: 0;
     width: 30px;
     height: 30px;
+}
+
+@media (max-width: 900px) {
+    .rating {
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+@media (max-width: 650px) {
+    .rating {
+        /* width: 100px;
+        display: flex;
+        flex-flow: row nowrap; */
+        justify-content: flex-start;
+        align-items: center;
+        /* width: 100%;
+        padding: 10px; */
+    }
+    .rating span {
+        width: 15px;
+        height: 15px;
+        
+    }
+    
+    .rating span img {
+        /* margin: 0; */
+        /* padding: 10px; */
+        width: 15px;
+        height: 15px;
+    }
 }

@@ -36,6 +36,32 @@
 .slider #right{
     right: 2%;
 }
-#right{
+
+
+@media (max-width: 650px) {
+    .slider {
+        height: 255px;
+    }
+    .slider img {
+        width: 100%;
+        height: 255px;
+    }
+    
+    .slider #left, .slider #right {
+        margin: 0;
+        padding: 0;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        bottom: 40%;
+        cursor: pointer;
+    }
+    .slider #left{
+        left: 2%;
+    }
+    
+    .slider #right{
+        right: 2%;
+    }
     
 }
